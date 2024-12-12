@@ -1,0 +1,123 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/* Стили для input с именем "phone" */
+.mycomment.add-comm {
+    display: none;
+}
+.mycomment-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.message_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    background-color: #e4e6eb;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #374d60;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.mycomment-btns .message_btn{
+    margin-right: 10px;
+}
+.mycomment-btns .message_btn:last-child{
+    margin-right: 0;
+}
+.user-coment {
+    color: white;
+    position: relative; 
+    float: right;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: right;
+}
+.user-coment .mycomment-info__inner {
+    background-color: #3580ed;
+}
+.link_icon {
+    cursor: pointer;
+}
+.comms-like .like-count {
+    position: relative;
+    bottom: unset;
+}
+.comms-like .like-number {
+    left: -14px;
+}
+.mycomment-bottom {
+    padding-bottom: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.comment-hide {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    /* Стили для устройств с шириной экрана до 480px */
+    .link_icon {
+        font-size: 12px;
+        gap: 3px
+    }
+
+    .comments_links .icon {
+        width: 15px;
+        height: 15px
+    }
+
+    .comments_links {
+        gap: 8px
+    }
+
+    .order_btn {
+        max-width: 240px
+    }
+
+    .sidebar {
+        display: none !important
+    }
+
+    .mycomment-btns {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .mycomment-btns .message_btn{
+        margin-right: 0;
+    }
+}

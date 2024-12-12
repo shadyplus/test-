@@ -1,0 +1,286 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Стиль для всего контейнера комментария */
+.mycomment {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /* Включает padding и border в общую ширину и высоту элемента */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Использует Flexbox для размещения дочерних элементов */
+    width: 100%; /* Полная ширина контейнера */
+    margin-bottom: 20px; /* Расстояние снизу каждого комментария */
+    font-size: 16px; /* Размер шрифта текста комментария */
+}
+
+/* Стиль для изображения профиля комментатора */
+.mycomment-img {
+    width: 36px; /* Ширина изображения */
+    height: 36px; /* Высота изображения */
+    border-radius: 50%; /* Закругленные края для создания круга */
+    margin-right: 10px; /* Отступ справа от изображения */
+}
+
+/* Стиль для имени комментатора */
+.mycomment-name {
+    font-weight: 600; /* Полужирный шрифт */
+    font-size: 18px!important; /* Размер шрифта с приоритетом */
+    margin-top: 0!important; /* Убирает отступ сверху */
+    margin-bottom: .5rem!important; /* Отступ снизу с приоритетом */
+}
+
+/* Стиль для текста комментария */
+.mycomment-text {
+    font-size: 18px!important; /* Размер шрифта с приоритетом */
+    line-height: 24px; /* Межстрочный интервал */
+    margin: 0!important; /* Убирает все отступы */
+}
+
+/* Стиль для изображений внутри текста комментария */
+.mycomment-text img {
+    margin-top: 10px; /* Отступ сверху */
+    max-width: 300px; /* Максимальная ширина изображения */
+    width: 100%; /* Полная ширина контейнера */
+}
+
+/* Стиль для нижней части комментария */
+.mycomment-bottom {
+    color: #929292; /* Цвет текста */
+    font-weight: 600; /* Полужирный шрифт */
+    font-size: 12px!important; /* Размер шрифта с приоритетом */
+    line-height: 10px!important; /* Межстрочный интервал с приоритетом */
+    margin: 6px 0 0 12px!important; /* Отступы вокруг элемента */
+    gap: 10px; /* Расстояние между элементами */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Flexbox для размещения элементов */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; /* Перенос элементов на новую строку при необходимости */
+}
+
+/* Стиль для анимации загрузки */
+.loading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Flexbox для размещения элементов */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрирование элементов по вертикали */
+    font-style: italic; /* Курсив */
+}
+
+/* Псевдоэлемент для анимации загрузки */
+.loading:after {
+    content: '.'; /* Точка в конце элемента */
+    -webkit-animation: loading 1s ease alternate infinite;
+            animation: loading 1s ease alternate infinite; /* Анимация для точки */
+}
+
+/* Кадры для анимации загрузки */
+@-webkit-keyframes loading {
+    60% {
+        text-shadow: 0.25em 0 0 currentColor;
+    }
+    100% {
+        text-shadow: 0.25em 0 0 currentColor, 0.75em 0 0 currentColor;
+    }
+}
+@keyframes loading {
+    60% {
+        text-shadow: 0.25em 0 0 currentColor;
+    }
+    100% {
+        text-shadow: 0.25em 0 0 currentColor, 0.75em 0 0 currentColor;
+    }
+}
+
+/* Кадры для анимации движения */
+@-webkit-keyframes race {
+    0% {
+        -webkit-transform: skew(0, -3deg);
+                transform: skew(0, -3deg);
+    }
+    25% {
+        -webkit-transform: skew(0, 3deg);
+                transform: skew(0, 3deg);
+    }
+    50% {
+        -webkit-transform: skew(0, -3deg);
+                transform: skew(0, -3deg);
+    }
+    75% {
+        -webkit-transform: skew(0, 3deg);
+                transform: skew(0, 3deg);
+    }
+    100% {
+        -webkit-transform: skew(0);
+                transform: skew(0);
+    }
+}
+@keyframes race {
+    0% {
+        -webkit-transform: skew(0, -3deg);
+                transform: skew(0, -3deg);
+    }
+    25% {
+        -webkit-transform: skew(0, 3deg);
+                transform: skew(0, 3deg);
+    }
+    50% {
+        -webkit-transform: skew(0, -3deg);
+                transform: skew(0, -3deg);
+    }
+    75% {
+        -webkit-transform: skew(0, 3deg);
+                transform: skew(0, 3deg);
+    }
+    100% {
+        -webkit-transform: skew(0);
+                transform: skew(0);
+    }
+}
+
+/* Стиль для внутренней информации комментария */
+.mycomment-info {
+    width: 100%; /* Полная ширина контейнера */
+    max-width: 100%; /* Максимальная ширина контейнера */
+}
+
+/* Стиль для внутренней части информации комментария */
+.mycomment-info__inner {
+    background-color: #ebedf0; /* Цвет фона */
+    border-radius: 18px; /* Закругленные углы */
+    line-height: 16px; /* Межстрочный интервал */
+    margin-top: 0; /* Отступ сверху */
+    padding: .75rem 12px 1rem 12px; /* Внутренние отступы */
+    position: relative; /* Относительное позиционирование */
+}
+
+/* Стиль для текстового поля */
+.textbox {
+    width: 100%; /* Полная ширина контейнера */
+    font-size: 16px; /* Размер шрифта */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /* Включает padding и border в общую ширину и высоту */
+    border: transparent; /* Прозрачная граница */
+    margin-bottom: 10px; /* Отступ снизу */
+    outline: none; /* Убирает обводку при фокусе */
+}
+
+/* Стиль для сообщения об ошибке */
+.error {
+    position: relative; /* Относительное позиционирование */
+    margin-top: -10px; /* Отступ сверху */
+    color: red; /* Цвет текста */
+    font-size: 13px; /* Размер шрифта */
+    padding-left: 5px; /* Внутренний отступ слева */
+    display: none; /* Скрывает элемент */
+}
+
+/* Стиль для кнопки отправки комментария */
+.sendcomment {
+    font-size: 17px; /* Размер шрифта */
+    cursor: pointer; /* Изменяет курсор на указатель */
+    text-decoration: underline; /* Подчеркивание текста */
+}
+
+/* Стиль для контейнера кнопок комментариев */
+.comments_btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Flexbox для размещения элементов */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрирование элементов по вертикали */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; /* Распределение элементов по краям */
+}
+
+/* Стиль для ссылок комментариев и репостов */
+.comments_links,
+.comments_reposts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Flexbox для размещения элементов */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрирование элементов по вертикали */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Центрирование элементов по горизонтали */
+    gap: 16px; /* Расстояние между элементами */
+}
+
+/* Дополнительный стиль для ссылок комментариев */
+.comments_links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; /* Равномерное распределение элементов */
+}
+
+/* Стиль для иконок ссылок */
+.link_icon {
+    font-size: 16px; /* Размер шрифта */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Flexbox для размещения элементов */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрирование элементов по вертикали */
+    gap: 8px; /* Расстояние между элементами */
+    color: #7d7e81!important; /* Цвет текста с приоритетом */
+}
+
+/* Стиль для иконок */
+.icon {
+    width: 22px; /* Ширина иконки */
+    height: 22px; /* Высота иконки */
+}
+
+/* Стиль для маленьких иконок */
+.icon__small {
+    width: 18px; /* Ширина иконки */
+    height: 18px; /* Высота иконки */
+}
+
+/* Стиль для счетчика лайков */
+.like-count {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 49px; /* Отступ справа */
+    bottom: -10px; /* Отступ снизу */
+    width: 25px; /* Ширина счетчика */
+    background-color: #fff; /* Цвет фона */
+    height: 25px; /* Высота счетчика */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Flexbox для размещения элементов */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрирование элементов по вертикали */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Центрирование элементов по горизонтали */
+    border-radius: 50%; /* Закругленные края */
+    -webkit-box-shadow: 0 1px 4px 0 rgba(102, 102, 102, .29); /* Тень для WebKit */ /* Тень для Mozilla */
+    box-shadow: 0 1px 4px 0 rgba(102, 102, 102, .29); /* Тень для других браузеров */
+    cursor: pointer; /* Изменяет курсор на указатель */
+}
+
+/* Стиль для активного лайка */
+.liked {
+    background-color: #3580ed!important; /* Цвет фона с приоритетом */
+}
+
+/* Стиль для ответа на комментарий */
+.reply {
+    padding-left: 16px; /* Внутренний отступ слева */
+}
+
+/* Стиль для повторного ответа на комментарий */
+.re-reply {
+    padding-left: 32px; /* Внутренний отступ слева */
+}
